@@ -1,0 +1,71 @@
+.cardContainer
+  display: flex
+  align-items: center
+  gap: 20px
+  border: 2px solid #F0F0F0
+  border-radius: 4px
+  width: 33%
+  padding: 5px 10px
+  opacity: 1
+  transform: translateY(0)
+  transition: opacity 0.3s ease, transform 0.3s ease
+
+  &.hidden
+    opacity: 0
+    transform: translateY(20px)
+
+  &:hover
+    cursor: pointer
+    transform: scale(1.05)
+
+.actualCard
+  display: flex
+  align-items: center
+  gap: 20px
+  border: 2px solid #21BE39
+  border-radius: 4px
+  width: 33%
+  padding: 5px 10px
+  opacity: 1
+  transform: translateY(0)
+  transition: opacity 0.3s ease, transform 0.3s ease
+
+  &.hidden
+    opacity: 0
+    transform: translateY(20px)
+
+  &:hover
+    cursor: pointer
+    transform: scale(1.05)
+
+.image
+  width: 30%
+  border-radius: 50%
+
+.name
+  font-size: 18px
+  font-weight: 500
+  line-height: 29.05px
+  color: #344054
+
+
+
+@media(max-width: 768px)
+  .image
+    width: 40%
+  .cardContainer
+    width: 100%
+
+  .actualCard
+    width: 100%
+
+  .name
+    font-size: 14px
+    width: 100%
+
+@media(max-width: 1024px)
+  .cardContainer
+    width: 80%
+
+  .actualCard
+    width: 80%

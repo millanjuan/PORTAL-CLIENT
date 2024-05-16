@@ -1,0 +1,78 @@
+// Variables
+@import "../../styles/mixins/mixins"
+//Mixins
+@import "../../styles/variables/variables"   
+
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px 40px
+    width: 100%
+    height: 130px
+    gap: 20px
+
+
+.logoContainer
+    width: 15%
+    height: auto
+.logo
+    width: 100%
+
+
+.navBarContainer
+    width: 75%
+
+.fullname
+    color: #626262
+    font-size: 20px
+    font-weight: 500
+
+.userDataContainer
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 10%
+
+.logOutButton
+    background-color: red
+    color: white
+    cursor: pointer
+    padding: 3px 10px
+    border-radius: 16px
+    font-size: 14px
+    transition: 0.3s ease
+    &:hover
+        background-color: #830404
+
+.menu
+    display: none
+
+
+@media(max-width: 1200px)
+    .fullname
+        font-size: 11px
+
+    .logOutButton
+        font-size: 10px
+
+
+
+@media(max-width: 768px)
+    .logoContainer
+        width: 20%
+    .menu
+        display: block
+    .fullname
+        display: none
+
+    .navBarContainer
+        display: none
+
+    .userDataContainer
+        display: none
+
+@media(max-width: 425px)
+    .logoContainer
+        width: 50%
