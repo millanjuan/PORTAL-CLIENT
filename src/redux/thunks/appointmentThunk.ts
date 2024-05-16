@@ -1,7 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit/react";
 import axios from "axios";
 import {
-  IAppointment,
   IDateAppointments,
   IMonthAppointments,
 } from "../../utils/interfaces/appointmentInterface";

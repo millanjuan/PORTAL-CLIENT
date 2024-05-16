@@ -1,11 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { specialitiesInitialState } from "../initialStates/states";
-import {
-  getSpecialitiesAsync,
-  updateSpeciality,
-  newSpecialityAsync,
-  deleteSpecialityAsync,
-} from "../thunks/specialityThunk";
+import { getSpecialitiesAsync } from "../thunks/specialityThunk";
 
 const specialitySlice = createSlice({
   name: "speciality",

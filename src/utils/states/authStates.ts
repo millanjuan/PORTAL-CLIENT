@@ -5,7 +5,6 @@ import {
   ISignUpErrors,
   IUpdateErrors,
 } from "../interfaces/authInterface";
-import { IUpdate } from "../interfaces/userInterface";
 
 export const initialRegisterState: ISignUp = {
   firstname: "",
