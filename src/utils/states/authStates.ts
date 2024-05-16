@@ -10,7 +10,6 @@ export const initialRegisterState: ISignUp = {
   firstname: "",
   lastname: "",
   email: "",
-  username: "",
   password: "",
   password2: "",
   typeidentity: "DNI",
@@ -21,18 +20,17 @@ export const initialErrorRegisterState: ISignUpErrors = {
   firstname: "",
   lastname: "",
   email: "",
-  username: "",
   password: "",
   identity: "",
 };
 
 export const initialLoginState: ISignIn = {
-  username: "",
+  email: "",
   password: "",
 };
 
 export const initialLoginErrorState: ISignInErrors = {
-  username: "",
+  email: "",
   password: "",
 };
 
