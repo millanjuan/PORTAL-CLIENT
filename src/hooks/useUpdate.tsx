@@ -20,7 +20,7 @@ const useUpdate = (initialState: IUpdate) => {
   const dispatch = useDispatch();
 
   const handleEditField = (fieldName: string) => {
-    setEditableFields((prevFields) => ({
+    setEditableFields((prevFields: any) => ({
       ...prevFields,
       [fieldName]: true,
     }));
@@ -65,7 +65,7 @@ const useUpdate = (initialState: IUpdate) => {
 
   const handleUpdateUser = async () => {
     let updatedUserInfo = { ...user };
-    if (selectedImage && selectedImage.length > 2) {
+    if (selectedImage) {
       const formDataCloudinary = new FormData();
       formDataCloudinary.append("file", selectedImage);
       formDataCloudinary.append("upload_preset", "AUDITAR");
