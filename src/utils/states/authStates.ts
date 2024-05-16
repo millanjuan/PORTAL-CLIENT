@@ -14,6 +14,7 @@ export const initialRegisterState: ISignUp = {
   password2: "",
   typeidentity: "DNI",
   identity: null,
+  birthdate: "",
 };
 
 export const initialErrorRegisterState: ISignUpErrors = {
@@ -22,6 +23,7 @@ export const initialErrorRegisterState: ISignUpErrors = {
   email: "",
   password: "",
   identity: "",
+  birthdate: "",
 };
 
 export const initialLoginState: ISignIn = {
