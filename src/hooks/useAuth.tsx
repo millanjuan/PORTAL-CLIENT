@@ -76,7 +76,7 @@ const useAuth = (initialState: ISignUp | ISignIn) => {
     if (Object.keys(validationError).length === 0) {
       try {
         const { payload } = await dispatch<any>(signInAsync(user as ISignIn));
-        if (!payload.success) return errorAlert(payload.error);
+        if (payload && !payload.success) return errorAlert(payload.error);
         await Promise.all([
           localStorage.setItem("token", payload.token),
           localStorage.setItem("expirationTime", payload.expirationTime),
